@@ -45,7 +45,12 @@ btnAdd.addEventListener("click", async function () {
     alert("заполните поле");
   }
 
-  if (obj.image.trim() == "") {
+  if (
+    obj.image.trim()[0] != "h" &&
+    obj.image.trim()[1] != "t" &&
+    obj.image.trim()[2] != "t" &&
+    obj.image.trim()[3] != "p"
+  ) {
     obj.image =
       "https://i.pinimg.com/236x/86/8f/e0/868fe0981546b91df095c9c766f6239f.jpg";
   }
@@ -170,7 +175,6 @@ closeBtn.addEventListener("click", () => {
   newContact.style.display = "block";
   editContact.style.display = "none";
 });
-
 
 searchInp.addEventListener("input", () => {
   searchValue = searchInp.value; //Записывает значение из поисковика в переменную searchVal
