@@ -27,6 +27,10 @@ let save = document.querySelector(".note");
 let newContact = document.querySelector(".newContact");
 let editContact = document.querySelector(".editContact");
 
+//? search variables
+let searchInp = document.querySelector("#search");
+let searchValue = "";
+
 //!--------------------------7-------------------
 //?закидываем данные на сервер
 
@@ -63,7 +67,7 @@ btnAdd.addEventListener("click", async function () {
 //? отображаем карточки на странице
 
 async function render() {
-  let contacts = await fetch(API)
+  let contacts = await fetch(`${API}?q=${searchValue}`)
     .then((res) => res.json())
     .catch((err) => console.log(err));
   book.innerHTML = "";
@@ -165,4 +169,10 @@ closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
   newContact.style.display = "block";
   editContact.style.display = "none";
+});
+
+
+searchInp.addEventListener("input", () => {
+  searchValue = searchInp.value; //Записывает значение из поисковика в переменную searchVal
+  render();
 });
