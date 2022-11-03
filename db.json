@@ -1,18 +1,5 @@
 {
   "products": [
-    {
-      "name": "dianadsdf",
-      "lastName": "u",
-      "number": "+32843848342",
-      "image": "https://i.pinimg.com/236x/11/36/2f/11362f1f04bf44e2201c1c5567f88506.jpg",
-      "id": 1
-    },
-    {
-      "name": "dsf",
-      "lastName": "asdf",
-      "number": "sdf",
-      "image": "https://i.pinimg.com/236x/86/8f/e0/868fe0981546b91df095c9c766f6239f.jpg",
-      "id": 2
-    }
+   
   ]
 }
