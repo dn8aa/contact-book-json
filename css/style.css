@@ -1,0 +1,267 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Nanum Brush Script", cursive;
+  /* color: rgb(79, 56, 42); */
+  color: black;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.leftPage {
+  width: 450px;
+  height: 717px;
+  background-size: contain;
+
+  background-image: url("https://i.pinimg.com/564x/99/a5/75/99a575b656c7b86246f57a7e93baedd8.jpg");
+
+  background-repeat: no-repeat;
+  border-radius: 10px;
+
+  margin-top: 1%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.rightPage {
+  width: 506px;
+  height: 717px;
+  background-size: contain;
+
+  /* background-size: cover;
+  width: 40%;
+  height: 90%; */
+
+  background-image: url("https://i.pinimg.com/564x/65/90/f7/6590f7c3e6e995ad3b6e80c59626b988.jpg");
+
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  /* margin: 5%; */
+  margin-top: 1%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  margin-top: 0;
+  /* color: rgb(79, 56, 42); */
+  color: black;
+}
+/* .leftPage {
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .rightPage {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+.book {
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-color: pink;
+  width: 350px;
+  height: 500px;
+}
+/* !scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255, 212, 219);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(204, 182, 215);
+  border-radius: 5px;
+}
+/* scrollbar */
+.note {
+  background-image: url("https://i.pinimg.com/564x/fc/31/dc/fc31dcdd9f594a21453d91e90144de05.jpg");
+  background-size: contain;
+  width: 282px;
+  height: 283px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  /* display: none; */
+  /* margin-top: 30%; */
+}
+.note-edit {
+  background-image: url("https://i.pinimg.com/564x/f0/00/1e/f0001ee03b69005899664a6062292cf1.jpg");
+  background-size: contain;
+  width: 282px;
+  height: 283px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  margin-top: 30%;
+  display: none;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.inputsEdit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+ 
+}
+
+
+
+.newContact {
+  margin-top: 18%;
+  font-size: 40px;
+  margin-bottom: 1%;
+  /* display: none; */
+}
+.editContact {
+  /* margin-top: 18%; */
+  
+  font-size: 30px;
+  margin-bottom: 1%;
+  padding: 0;
+  margin: 0;
+  margin-left: 30%;
+  display: none;
+}
+input {
+  width: 100%;
+  margin: 1%;
+  padding: 3%;
+  border-radius: 20px;
+  border: 2px rgb(193, 164, 208) solid;
+  background-color: transparent;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+.inputsEdit input {
+  width: 90%;
+  margin: 1%;
+  padding: 2%;
+  border-radius: 20px;
+  border: 2px rgb(193, 164, 208) solid;
+  background-color: transparent;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+input::placeholder {
+  color: rgb(193, 164, 208);
+  /* color: rgb(73, 47, 86); */
+  /* color:rgb(131, 95, 74); */
+}
+#btnAdd {
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 30px;
+  font-weight: 300;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 20px;
+  margin: 6%;
+  background-color: transparent;
+  background-color: rgb(226, 203, 236);
+  /* border: 2px solid rgb(193, 164, 208); */
+  border: none;
+
+  /* color:rgb(131, 95, 74); */
+  color: black;
+  /* color: rgb(73, 47, 86); */
+  /* color: rgb(79, 56, 42); */
+  /* margin-left: 0%; */
+  cursor: pointer;
+}
+
+/*! card */
+.card {
+  background-color: transparent;
+  border-radius: 20px;
+  width: 95%;
+  height: 30%;
+  margin-bottom: 5%;
+  border: 2px solid rgb(193, 164, 208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+img {
+  width: 40%;
+  border-radius: 50%;
+  /* border: 2px solid rgb(228, 138, 161); */
+}
+.info {
+  width: 50%;
+  margin-left: 5%;
+}
+.name {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+}
+.number {
+  font-size: 25px;
+  /* border-bottom: 1px solid black; */
+}
+
+.btnEdit,
+.btnDelete {
+  background-color: rgb(226, 203, 236);
+  border: none;
+  border-radius: 15px;
+  padding: 3%;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 20px;
+}
+
+.closeBtn,
+.editBtn {
+  background-color: rgb(226, 203, 236);
+  border: none;
+  border-radius: 15px;
+  padding: 8%;
+  padding-left: 13%;
+  padding-right: 13%;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 20px;
+  margin: 4%;
+}
+.btns-edit {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+
